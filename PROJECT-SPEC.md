@@ -36,9 +36,13 @@ Convert service-business visitors into application starts by explaining the no-d
 - `/meet-rebecca` - Rebecca's experience, values, creative approach and long-term relationship promise
 - `/how-it-works` - demo-first process, indicative timing and best-fit clients
 - `/apply` - focused multi-step application connected to Forminit
+- `/privacy-policy` - privacy policy shell awaiting approved text
+- `/cookie-policy` - cookie policy shell awaiting approved text
+- `/terms-and-conditions` - terms shell awaiting approved text
 - `/concept-aesthetics` - fictional calm aesthetics homepage concept
 - `/concept-travel` - fictional blue-toned travel consultant homepage concept
 - `/concept-coach` - fictional black-and-white business coaching homepage concept
+- `/404` - branded page-not-found route
 
 ## Audience and process
 
@@ -53,12 +57,12 @@ Convert service-business visitors into application starts by explaining the no-d
 - Responsive navigation at tablet/mobile widths.
 - Scroll-responsive hero starburst.
 - Scroll reveals, pulsing emphasis and arrow motion stop under `prefers-reduced-motion`.
-- Inspiration previews use native dialogs with close buttons, Escape support and click-outside closing.
+- Inspiration previews use native dialogs containing the full scrollable concept homepages, with close buttons, Escape support and click-outside closing.
 - Semantic headings, skip link, visible keyboard focus and labelled controls are included.
 
 ## Open items before launch
 
-- Replace all portrait and portfolio placeholders with approved assets.
+- Add approved legal text to the privacy, cookie and terms pages, then remove their `noindex` directives.
 - Confirm whether ongoing project communication will use email or WhatsApp.
 - Confirm the final service terms and FAQ wording, especially cancellation, unlimited edits, backup frequency and ongoing-support boundaries.
 - Add approved privacy/terms links and analytics configuration.

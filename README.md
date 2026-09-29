@@ -2,7 +2,7 @@
 
 A static multi-page website ready to deploy through Vercel. Shared navigation and footer markup lives in `js/site-components.js`. Clean URLs are configured in `vercel.json`.
 
-Routes: `/`, `/meet-rebecca`, `/how-it-works`, `/apply`, `/concept-aesthetics`, `/concept-travel`, and `/concept-coach`.
+Routes: `/`, `/meet-rebecca`, `/how-it-works`, `/apply`, `/privacy-policy`, `/cookie-policy`, `/terms-and-conditions`, `/concept-aesthetics`, `/concept-travel`, `/concept-coach`, and the custom `404.html` fallback.
 
 ## Preview locally
 
@@ -17,7 +17,7 @@ Open `index.html` directly in a browser, or run a small local server from this f
 
 Vercel can serve `index.html` directly, so this version needs no package installation or build step. JavaScript controls the responsive navigation, scroll effects, inspiration-site dialogs and current year.
 
-The page does not currently contain a form, analytics script or third-party service. Connect the application buttons and replace labelled image/portfolio placeholders before the full launch. See `PROJECT-SPEC.md` for the current decisions and open items.
+The application form submits through Forminit. Analytics is not yet connected. The policy pages contain clearly labelled placeholder copy and remain `noindex` until approved legal text is added. See `PROJECT-SPEC.md` for the current decisions and open items.
 
 ## Design tokens
 

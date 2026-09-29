@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="8" fill="#0b0b0b"/>
+  <path fill="#c0ff15" d="M32 3l4.2 11.8 9.4-8.2-1 12.4 12.2-2.7-7.1 10.3L61 32l-11.3 5.4 7.1 10.3L44.6 45l1 12.4-9.4-8.2L32 61l-4.2-11.8-9.4 8.2 1-12.4-12.2 2.7 7.1-10.3L3 32l11.3-5.4-7.1-10.3 12.2 2.7-1-12.4 9.4 8.2z"/>
+  <circle cx="32" cy="32" r="10" fill="#5957ff"/>
+  <text x="32" y="36.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="900" fill="#fff">EB</text>
+</svg>

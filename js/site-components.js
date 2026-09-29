@@ -3,6 +3,7 @@ class ElevatedSiteHeader extends HTMLElement {
     const currentPage = this.getAttribute('page') || '';
     const focusMode = this.getAttribute('mode') === 'focus';
     const current = (page) => currentPage === page ? ' aria-current="page"' : '';
+    const showHomeLink = currentPage !== 'home' && currentPage !== 'apply';
 
     this.innerHTML = `
       <header class="site-header${focusMode ? ' site-header-focus' : ''}" data-header>
@@ -17,6 +18,7 @@ class ElevatedSiteHeader extends HTMLElement {
             <span></span><span></span><span></span><span class="sr-only">Open menu</span>
           </button>
           <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-menu>
+            ${showHomeLink ? '<a href="/">Home</a>' : ''}
             <a href="/meet-rebecca"${current('meet')}>Meet Rebecca</a>
             <a href="/how-it-works"${current('how')}>How it works</a>
             <a href="/#work">Inspiration</a>
@@ -42,6 +44,9 @@ class ElevatedSiteFooter extends HTMLElement {
           <a href="/how-it-works">How it works</a>
           <a href="/#faq">FAQs</a>
           <a href="/apply">Apply</a>
+          <a href="/privacy-policy">Privacy</a>
+          <a href="/cookie-policy">Cookies</a>
+          <a href="/terms-and-conditions">Terms</a>
         </nav>
         <div class="footer-contact">
           <a href="mailto:rebecca@elevatedbusiness.co.uk">rebecca@elevatedbusiness.co.uk</a>
