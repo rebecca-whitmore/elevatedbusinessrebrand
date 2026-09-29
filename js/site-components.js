@@ -10,6 +10,7 @@ class ElevatedSiteFooter extends HTMLElement {
         <nav class="footer-nav" aria-label="Footer navigation">
           <a href="/#faq">FAQs</a>
           <a href="/#process">How it works</a>
+          <a href="/blog.html">Blog</a>
           <a href="/#apply">Apply</a>
         </nav>
         <div class="footer-contact">

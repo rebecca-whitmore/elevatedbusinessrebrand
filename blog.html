@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta name="description" content="Practical website, business and online visibility advice from Elevated Business.">
+  <title>Blog | Elevated Business</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site-components.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body class="blog-page" id="top">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header blog-header" data-header>
+    <a class="brand" href="/" aria-label="Elevated Business home"><span class="brand-mark" aria-hidden="true">EB</span><span>Elevated<br>Business</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-menu>
+      <a href="/#included">What’s included</a><a href="/#work">Inspiration</a><a href="/#process">How it works</a><a href="/#faq">FAQs</a><a href="blog.html" aria-current="page">Blog</a><a class="nav-cta" href="/#apply">I’m in <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="blog-hero" aria-labelledby="blog-title">
+      <div class="blog-hero-grid" aria-hidden="true"></div>
+      <div class="blog-asterisk" aria-hidden="true">✦</div>
+      <p class="section-label section-label-light">Ideas worth putting to work</p>
+      <h1 id="blog-title">The Elevated<br><em>Business blog.</em></h1>
+      <p>Practical thoughts on websites, visibility and making your business easier to choose.</p>
+    </section>
+
+    <section class="blog-feed" aria-labelledby="latest-title">
+      <div class="blog-feed-heading">
+        <p class="section-label">Fresh from the back office</p>
+        <h2 id="latest-title">Latest <em>articles.</em></h2>
+      </div>
+      <div id="posts"></div>
+    </section>
+  </main>
+
+  <eb-site-footer></eb-site-footer>
+  <a class="back-to-top" href="#top" aria-label="Back to top">↑</a>
+
+  <script>
+    (() => {
+      const postsContainer = document.querySelector('#posts');
+      const endpoint = 'https://backoffice.elevatedbusiness.co.uk/wp-json/wp/v2/posts';
+
+      const renderMessage = (message, className) => {
+        postsContainer.innerHTML = `<p class="${className}" role="status">${message}</p>`;
+      };
+
+      const loadPosts = async () => {
+        renderMessage('Loading the latest articles…', 'posts-status');
+
+        try {
+          const response = await fetch(endpoint);
+          if (!response.ok) throw new Error(`Request failed with status ${response.status}`);
+
+          const posts = await response.json();
+          postsContainer.innerHTML = '';
+
+          if (!posts.length) {
+            renderMessage('No articles have been published yet. Please check back soon.', 'posts-status');
+            return;
+          }
+
+          posts.forEach((post, index) => {
+            const article = document.createElement('article');
+            article.className = 'blog-post';
+            article.innerHTML = `
+              <span class="blog-post-number">${String(index + 1).padStart(2, '0')}</span>
+              <h2>${post.title.rendered}</h2>
+              <div class="blog-post-content">${post.content.rendered}</div>`;
+            postsContainer.appendChild(article);
+          });
+        } catch (error) {
+          console.error('Unable to load blog posts:', error);
+          renderMessage('The articles could not be loaded right now. Please try again shortly.', 'posts-status posts-status-error');
+        }
+      };
+
+      loadPosts();
+    })();
+  </script>
+</body>
+</html>
