@@ -73,6 +73,79 @@ const initialiseElevatedSite = () => {
     });
     modal.addEventListener('close', () => document.body.classList.remove('modal-open'));
   });
+
+  const applicationForm = document.querySelector('#website-application');
+  if (applicationForm) {
+    const steps = [...applicationForm.querySelectorAll('[data-form-step]')];
+    const stepLabel = applicationForm.querySelector('[data-step-label]');
+    const stepName = applicationForm.querySelector('[data-step-name]');
+    const progress = applicationForm.querySelector('[data-progress]');
+    const progressFill = progress?.querySelector('span');
+    let currentStep = 0;
+
+    const showStep = (index) => {
+      currentStep = Math.max(0, Math.min(index, steps.length - 1));
+      steps.forEach((step, stepIndex) => {
+        const active = stepIndex === currentStep;
+        step.hidden = !active;
+        step.classList.toggle('is-active', active);
+      });
+      if (stepLabel) stepLabel.textContent = `Step ${currentStep + 1} of ${steps.length}`;
+      if (stepName) stepName.textContent = steps[currentStep].dataset.stepTitle;
+      if (progress) progress.setAttribute('aria-valuenow', String(currentStep + 1));
+      if (progressFill) progressFill.style.width = `${((currentStep + 1) / steps.length) * 100}%`;
+      applicationForm.scrollIntoView({ behavior: reduceMotion.matches ? 'auto' : 'smooth', block: 'start' });
+    };
+
+    const validateStep = (step) => {
+      let valid = true;
+      step.querySelectorAll('input, textarea, select').forEach((field) => {
+        const fieldValid = field.checkValidity();
+        field.closest('.field')?.classList.toggle('is-invalid', !fieldValid);
+        if (!fieldValid && valid) {
+          field.reportValidity();
+          valid = false;
+        }
+      });
+      step.querySelectorAll('[data-required-choice]').forEach((group) => {
+        const groupValid = Boolean(group.querySelector('input:checked'));
+        group.classList.toggle('is-invalid', !groupValid);
+        if (!groupValid) valid = false;
+      });
+      return valid;
+    };
+
+    applicationForm.querySelectorAll('[data-next]').forEach((button) => {
+      button.addEventListener('click', () => {
+        if (validateStep(steps[currentStep])) showStep(currentStep + 1);
+      });
+    });
+    applicationForm.querySelectorAll('[data-back]').forEach((button) => {
+      button.addEventListener('click', () => showStep(currentStep - 1));
+    });
+    applicationForm.querySelectorAll('input, textarea').forEach((field) => {
+      field.addEventListener('input', () => field.closest('.field')?.classList.remove('is-invalid'));
+      field.addEventListener('change', () => field.closest('[data-required-choice]')?.classList.remove('is-invalid'));
+    });
+
+    applicationForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!validateStep(steps[currentStep])) return;
+      steps[currentStep].hidden = true;
+      const sending = applicationForm.querySelector('[data-form-sending]');
+      const complete = applicationForm.querySelector('[data-form-complete]');
+      if (sending) sending.hidden = false;
+
+      // Replace this preview transition with the Forminit request when the endpoint is connected.
+      window.setTimeout(() => {
+        if (sending) sending.hidden = true;
+        if (complete) {
+          complete.hidden = false;
+          complete.focus();
+        }
+      }, reduceMotion.matches ? 200 : 1800);
+    });
+  }
 };
 
 if (document.readyState === 'loading') {

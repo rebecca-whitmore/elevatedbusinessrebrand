@@ -1,37 +1,70 @@
 <!doctype html>
 <html lang="en-GB">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0b0b">
-  <meta name="description" content="Apply for a free professionally designed website from Elevated Business.">
-  <title>Apply for Your Free Website | Elevated Business</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/site-components.js" defer></script>
-  <script src="js/script.js" defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f9f1fe">
+  <meta name="description" content="Apply for a free professionally designed website from Elevated Business."><title>Apply for Your Free Website | Elevated Business</title>
+  <link rel="stylesheet" href="css/style.css"><script src="js/site-components.js" defer></script><script src="js/script.js" defer></script>
 </head>
 <body class="application-page" id="top">
-  <a class="skip-link" href="#main-content">Skip to content</a>
-  <eb-site-header page="apply" mode="focus"></eb-site-header>
+  <a class="skip-link" href="#main-content">Skip to content</a><eb-site-header page="apply" mode="focus"></eb-site-header>
+  <main id="main-content" class="application-main">
+    <header class="application-heading"><p class="section-label">Your new website starts here</p><h1>Apply for your <em>free website.</em></h1><p>Tell me what you know so far. Clear, honest answers are far more useful than polished ones.</p></header>
+    <form class="application-form" id="website-application" novalidate>
+      <div class="form-progress" aria-label="Application progress"><div class="form-progress-copy"><span data-step-label>Step 1 of 4</span><strong data-step-name>Your details</strong></div><div class="form-progress-track" role="progressbar" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" data-progress><span></span></div></div>
 
-  <main id="main-content">
-    <section class="application-shell" aria-labelledby="application-title">
-      <div class="application-intro">
-        <p class="section-label section-label-light">Let’s build something useful</p>
-        <h1 id="application-title">Apply for your<br><em>free website.</em></h1>
-        <p>Tell me about your business, your audience and what a better website would help you do. Clear, honest answers are much more useful than polished ones.</p>
-        <div class="application-expectations"><span>Focused application</span><span>No sales call required</span><span>Demo aimed within 24 working hours</span></div>
-      </div>
-      <div class="application-form-placeholder" aria-labelledby="form-placeholder-title">
-        <span class="application-step">Application / 01</span>
-        <h2 id="form-placeholder-title">Your application form will live here.</h2>
-        <p>The full question flow, validation and submission handling will be added in the next stage.</p>
-        <div class="placeholder-fields" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-      </div>
-    </section>
-    <section class="application-next" aria-label="What happens after applying"><strong>What happens next?</strong><p>After submitting, you’ll see a confirmation page and receive an email. You must click the link in that email before I begin your demo. That simple extra step confirms you genuinely want to proceed.</p></section>
+      <section class="form-step is-active" data-form-step data-step-title="Your details">
+        <div class="form-step-heading"><span>01</span><div><h2>First, let’s meet.</h2><p>Just the essentials so I know who I’m creating for.</p></div></div>
+        <div class="form-grid">
+          <label class="field"><span>Your name</span><input type="text" name="name" autocomplete="name" required></label>
+          <label class="field"><span>Email address</span><input type="email" name="email" autocomplete="email" required></label>
+          <label class="field field-wide"><span>Mobile number <small>Optional</small></span><input type="tel" name="mobile" autocomplete="tel"><small>If you provide a number, I may WhatsApp if I need a little more information before building your demo. It also gives us an easy way to keep in touch.</small></label>
+        </div>
+        <aside class="form-note"><span class="profile-dot" aria-label="Placeholder for Rebecca’s profile photograph">R</span><p>“You won’t need to prepare a perfect brief. Give me the useful details and I’ll turn them into a clear creative direction.” <strong>Rebecca</strong></p></aside>
+        <div class="form-actions form-actions-end"><button class="button button-dark" type="button" data-next>About your business <span aria-hidden="true">→</span></button></div>
+      </section>
+
+      <section class="form-step" data-form-step data-step-title="About your business" hidden>
+        <div class="form-step-heading"><span>02</span><div><h2>Tell me about the business.</h2><p>The more context I have, the more useful your first demo can be.</p></div></div>
+        <div class="form-grid">
+          <label class="field"><span>Business name</span><input type="text" name="business_name" autocomplete="organization" required></label>
+          <label class="field"><span>Location</span><input type="text" name="location" placeholder="For example, Chester, Cheshire or Online" required></label>
+          <label class="field"><span>Existing website <small>Optional</small></span><input type="url" name="website" inputmode="url" placeholder="https://"></label>
+          <label class="field"><span>Social media links <small>Optional</small></span><input type="text" name="social_links" placeholder="Instagram, Facebook, LinkedIn or others"></label>
+          <label class="field field-wide"><span>Tell me about your business</span><textarea name="business_overview" rows="7" required></textarea><small>What do you offer, who do you help, and what makes your approach different? Include as much useful detail as you can. You do not need to list every individual service or price.</small></label>
+        </div>
+        <aside class="form-note form-note-soft"><span class="profile-dot" aria-label="Placeholder for Rebecca’s profile photograph">R</span><p>“Write this as though you were explaining your business to a friendly new client. I can shape the wording later.”</p></aside>
+        <div class="form-actions"><button class="text-button" type="button" data-back>← Back</button><button class="button button-dark" type="button" data-next>Your website <span aria-hidden="true">→</span></button></div>
+      </section>
+
+      <section class="form-step" data-form-step data-step-title="Your website" hidden>
+        <div class="form-step-heading"><span>03</span><div><h2>What should the website do?</h2><p>You don’t need to plan the whole site. Tell me what a successful one would help you achieve.</p></div></div>
+        <div class="form-grid">
+          <label class="field field-wide"><span>What would you like your website to help you achieve?</span><textarea name="website_goal" rows="5" placeholder="For example, generate enquiries, build trust or explain my services clearly" required></textarea></label>
+          <label class="field field-wide"><span>Which services or key information should it include?</span><textarea name="services" rows="6" placeholder="An overview is perfect. Add individual services or prices only if they are important." required></textarea></label>
+          <label class="field"><span>Contact number for the website <small>Optional</small></span><input type="tel" name="public_phone" autocomplete="tel"></label>
+          <label class="field"><span>Address for the website <small>Optional</small></span><input type="text" name="public_address" autocomplete="street-address"></label>
+          <fieldset class="choice-group field-wide" data-required-choice><legend>Which pages do you think you’ll need?</legend><p>Select as many as you like. “I’m not sure” is a perfectly useful answer.</p><div class="choice-grid choice-grid-pages">
+            <label><input type="checkbox" name="pages" value="Home"><span>Home</span></label><label><input type="checkbox" name="pages" value="About"><span>About</span></label><label><input type="checkbox" name="pages" value="Services"><span>Services</span></label><label><input type="checkbox" name="pages" value="Contact"><span>Contact</span></label><label><input type="checkbox" name="pages" value="FAQs"><span>FAQs</span></label><label><input type="checkbox" name="pages" value="Unsure"><span>I’m not sure</span></label>
+          </div><small class="choice-error" data-choice-error>Please choose at least one option.</small></fieldset>
+        </div>
+        <div class="form-actions"><button class="text-button" type="button" data-back>← Back</button><button class="button button-dark" type="button" data-next>Design preferences <span aria-hidden="true">→</span></button></div>
+      </section>
+
+      <section class="form-step" data-form-step data-step-title="Design preferences" hidden>
+        <div class="form-step-heading"><span>04</span><div><h2>How should it feel?</h2><p>Your choices give me a starting point, but you’re not being asked to design the website yourself.</p></div></div>
+        <fieldset class="choice-group"><legend>Choose the closest overall feeling</legend><div class="choice-grid choice-grid-styles">
+          <label><input type="radio" name="design_style" value="Calm and reassuring" required><span><strong>Calm &amp; reassuring</strong><small>Soft, welcoming and trust-led.</small></span></label><label><input type="radio" name="design_style" value="Polished and professional"><span><strong>Polished &amp; professional</strong><small>Clear, credible and confident.</small></span></label><label><input type="radio" name="design_style" value="Bold and energetic"><span><strong>Bold &amp; energetic</strong><small>Expressive, bright and memorable.</small></span></label><label><input type="radio" name="design_style" value="Minimal and refined"><span><strong>Minimal &amp; refined</strong><small>Simple, spacious and elegant.</small></span></label><label><input type="radio" name="design_style" value="Use your judgement"><span><strong>Use your judgement</strong><small>I’m happy for Rebecca to lead.</small></span></label>
+        </div></fieldset>
+        <div class="form-grid form-grid-after-choices"><label class="field"><span>Colours you like <small>Optional</small></span><input type="text" name="preferred_colours" placeholder="Names, hex codes or simply a mood"></label><label class="field"><span>Colours or styles to avoid <small>Optional</small></span><input type="text" name="avoid"></label><label class="field field-wide"><span>Example websites you like <small>Optional</small></span><textarea name="inspiration" rows="4" placeholder="Add links and tell me what caught your eye"></textarea></label></div>
+        <aside class="developer-card"><span class="profile-dot profile-dot-large" aria-label="Placeholder for Rebecca’s profile photograph">R</span><div><p class="developer-label">Your website designer</p><h3>Rebecca</h3><p>I’ll personally create your initial website concept around your business, audience and goals. I aim to have it ready for you to review within 24 hours on working days.</p><strong>There is no design fee. You only begin paying £29 per month when your website is ready to launch.</strong></div></aside>
+        <label class="confirmation"><input type="checkbox" name="intent_confirmation" required><span>I confirm that the information I’ve provided is accurate and I intend to review the demo created for my business.</span></label>
+        <div class="form-actions"><button class="text-button" type="button" data-back>← Back</button><button class="button button-dark" type="submit">Send my application <span aria-hidden="true">↗</span></button></div>
+      </section>
+
+      <section class="form-sending" data-form-sending hidden aria-live="polite"><div class="sending-spinner" aria-hidden="true"></div><p class="section-label">Sending your application</p><h2>Getting everything safely across.</h2><div class="sending-track"><span></span></div></section>
+      <section class="form-complete" data-form-complete hidden tabindex="-1"><span class="complete-mark" aria-hidden="true">✓</span><p class="section-label">Application received</p><h2>Hoorah! Your idea is officially in motion.</h2><p>Check your inbox next. You’ll need to click the confirmation link in my email before I begin creating your demo.</p></section>
+    </form>
   </main>
-
   <eb-site-footer></eb-site-footer>
 </body>
 </html>
