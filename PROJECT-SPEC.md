@@ -36,7 +36,6 @@ Convert service-business visitors into application starts by explaining the no-d
 - `/meet-rebecca` - Rebecca's experience, values, creative approach and long-term relationship promise
 - `/how-it-works` - demo-first process, indicative timing and best-fit clients
 - `/apply` - focused multi-step application connected to Forminit
-- `/application-confirmed` - email-link landing page confirming permission to begin the demo
 - `/concept-aesthetics` - fictional calm aesthetics homepage concept
 - `/concept-travel` - fictional blue-toned travel consultant homepage concept
 - `/concept-coach` - fictional black-and-white business coaching homepage concept
@@ -45,7 +44,7 @@ Convert service-business visitors into application starts by explaining the no-d
 
 - Best suited to relationship-led service businesses such as travel professionals, personal trainers, virtual assistants, coaches, therapists and beauticians.
 - Typical sites contain four or five pages, shaped around the business rather than a fixed page allowance.
-- Journey: application, confirmation email click, initial demo, refinements, domain connection and launch.
+- Journey: application, initial demo, refinements, domain connection and launch.
 - The initial demo is aimed within 24 hours on working days. A typical site may launch within three to five working days when content and feedback arrive promptly.
 - Timing is positioned as an aim, not a guarantee.
 
@@ -60,7 +59,6 @@ Convert service-business visitors into application starts by explaining the no-d
 ## Open items before launch
 
 - Replace all portrait and portfolio placeholders with approved assets.
-- Build the application questions, validation, submission handling, confirmation email and two success states.
 - Confirm whether ongoing project communication will use email or WhatsApp.
 - Confirm the final service terms and FAQ wording, especially cancellation, unlimited edits, backup frequency and ongoing-support boundaries.
 - Add approved privacy/terms links and analytics configuration.
