@@ -4,105 +4,117 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0b0b">
-  <meta name="description" content="Elevated Business is preparing a new way for small businesses to get a professionally built website.">
-  <title>Elevated Business — Coming soon</title>
+  <meta name="description" content="A professional website designed around your business, with no design fee. Hosting, maintenance and ongoing support for £29 a month.">
+  <title>Elevated Business | Free website design for small businesses</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
-  <a class="eb-skip-link" href="#main-content">Skip to content</a>
-
-  <header class="eb-header" aria-label="Site header">
-    <a class="eb-brand" href="#top" aria-label="Elevated Business home">
-      <span class="eb-brand__mark" aria-hidden="true">EB</span>
-      <span class="eb-brand__name">Elevated<br>Business</span>
-    </a>
-    <span class="eb-header__status"><span aria-hidden="true"></span> New site loading</span>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="Elevated Business home"><span class="brand-mark" aria-hidden="true">EB</span><span>Elevated<br>Business</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-menu>
+      <a href="#included">What’s included</a><a href="#work">Inspiration</a><a href="#process">How it works</a><a href="#faq">FAQs</a><a class="nav-cta" href="#apply">I’m in <span aria-hidden="true">↗</span></a>
+    </nav>
   </header>
 
   <main id="main-content">
-    <section class="eb-hero" id="top" aria-labelledby="hero-title">
-      <div class="eb-hero__noise" aria-hidden="true"></div>
-      <div class="eb-hero__content">
-        <p class="eb-eyebrow"><span>01</span> Websites without the usual upfront cost</p>
-        <h1 id="hero-title">A better website is <em>on its way.</em></h1>
-        <p class="eb-hero__lede">Elevated Business creates bold, thoughtful websites for small businesses—with no website build fee and hosting from £29 a month.</p>
-        <div class="eb-actions">
-          <a class="eb-button eb-button--neon" href="#coming-soon">See what’s coming <span aria-hidden="true">↘</span></a>
-          <a class="eb-text-link" href="#how-it-works">How it will work <span aria-hidden="true">→</span></a>
-        </div>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div><div class="hero-orbit hero-orbit-one" aria-hidden="true"></div><div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+      <div class="hero-star" data-scroll-burst aria-hidden="true"><span>£0<br>DESIGN<br>FEE</span></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span>Websites, differently</span></p>
+        <h1 id="hero-title">Imagine a website designed for <em>results.</em> For free.</h1>
+        <p class="hero-question">You in?</p>
+        <a class="button button-neon" href="#apply">Show me how <span aria-hidden="true">↘</span></a>
       </div>
-
-      <div class="eb-hero__art" aria-hidden="true">
-        <div class="eb-orbit eb-orbit--one"></div>
-        <div class="eb-orbit eb-orbit--two"></div>
-        <div class="eb-starburst" data-scroll-burst>
-          <span>COMING<br>SOON</span>
-        </div>
-        <p class="eb-art-note">Big impact.<br>Small-business friendly.</p>
-      </div>
-
-      <p class="eb-scroll-note" aria-hidden="true">Scroll to explore <span>↓</span></p>
-    </section>
-
-    <section class="eb-marquee" aria-label="Elevated Business benefits">
-      <div class="eb-marquee__track">
-        <span>Free website build</span><i aria-hidden="true">✦</i>
-        <span>£29 monthly hosting</span><i aria-hidden="true">✦</i>
-        <span>Designed to stand out</span><i aria-hidden="true">✦</i>
-        <span aria-hidden="true">Free website build</span><i aria-hidden="true">✦</i>
-        <span aria-hidden="true">£29 monthly hosting</span><i aria-hidden="true">✦</i>
-        <span aria-hidden="true">Designed to stand out</span><i aria-hidden="true">✦</i>
+      <p class="hero-side-note" aria-hidden="true">Scroll to see what’s possible <span>↓</span></p>
+      <div class="hero-sites" aria-label="Three example website previews">
+        <article class="browser-card browser-card-left" aria-label="Example wellness website placeholder"><div class="browser-bar"><i></i><i></i><i></i><span>studio-example.co.uk</span></div><div class="mini-site mini-site-one"><div class="mini-nav"><b>STILL.</b><small>STUDIO&nbsp;&nbsp; JOURNAL&nbsp;&nbsp; BOOK</small></div><div class="mini-hero"><small>Find your pause</small><strong>Space to breathe.</strong><button tabindex="-1">Explore classes</button></div></div></article>
+        <article class="browser-card browser-card-main" aria-label="Example professional services website placeholder"><div class="browser-bar"><i></i><i></i><i></i><span>yourbusiness.co.uk</span></div><div class="mini-site mini-site-two"><div class="mini-nav"><b>NORTH &amp; CO.</b><small>ABOUT&nbsp;&nbsp; SERVICES&nbsp;&nbsp; CONTACT</small></div><div class="mini-hero"><small>Good work, made visible</small><strong>Your business.<br>Elevated.</strong><button tabindex="-1">Start here</button></div></div></article>
+        <article class="browser-card browser-card-right" aria-label="Example creative business website placeholder"><div class="browser-bar"><i></i><i></i><i></i><span>made-example.co.uk</span></div><div class="mini-site mini-site-three"><div class="mini-nav"><b>MADE.</b><small>SHOP&nbsp;&nbsp; STORY&nbsp;&nbsp; HELLO</small></div><div class="mini-hero"><small>Small batch. Big character.</small><strong>Made to<br>be noticed.</strong><button tabindex="-1">See the collection</button></div></div></article>
       </div>
     </section>
 
-    <section class="eb-intro" id="coming-soon" aria-labelledby="intro-title">
-      <p class="eb-section-number">02 / A fresh approach</p>
-      <div class="eb-intro__grid">
-        <h2 id="intro-title">Your business deserves more than <span>“good enough.”</span></h2>
-        <div class="eb-intro__copy">
-          <p>We’re building a simpler route to a website that feels considered, credible and unmistakably yours.</p>
-          <p class="eb-small-copy">No hefty build invoice. No cookie-cutter result. Just a website made to help your business take its next step.</p>
-        </div>
+    <section class="reassurance" aria-label="Service highlights">
+      <div><span>01</span><strong>No design fee.</strong></div><div><span>02</span><strong>Secure hosting.</strong></div><div><span>03</span><strong>Ongoing care.</strong></div><div><span>04</span><strong>Personal service.</strong></div>
+    </section>
+
+    <section class="intro split-section" aria-labelledby="intro-title">
+      <div class="intro-copy reveal">
+        <p class="section-label">A website you’re proud to share</p><h2 id="intro-title">Does your website feel like <em>you?</em></h2>
+        <p>Maybe it doesn’t represent your business anymore. Or perhaps it looks fine, but it isn’t helping the right people take the next step.</p>
+        <p>I get it. You want a website that elevates your business, earns trust and helps turn the right visitors into genuine enquiries.</p>
+        <p class="lead-line">The good news is: you can have one.</p>
+        <p>Hi, I’m Rebecca. I build beautiful, professional websites shaped around you and your business.</p>
+        <p>The best part? I don’t charge a design fee. You’ll only <u>ever</u> pay a low monthly fee of <strong>£29</strong> for hosting and maintenance.</p>
+        <a class="down-link" href="#secret">More on that below <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="portrait-placeholder reveal" role="img" aria-label="Placeholder for a portrait of Rebecca"><span class="placeholder-kicker">Your photo here</span><div class="portrait-shape" aria-hidden="true"><span>R</span></div><p>Rebecca<br><small>Designer · problem solver · your point of contact</small></p><i class="scribble scribble-one" aria-hidden="true"></i></div>
+    </section>
+
+    <section class="secret" id="secret" aria-labelledby="secret-title">
+      <div class="secret-star" aria-hidden="true">Psst!</div><p class="section-label section-label-light">The not-so-secret secret</p>
+      <h2 id="secret-title">Nobody really wants<br><span class="word-huge">just a website.</span></h2>
+      <div class="secret-copy"><p>They want the phone to ring, appointments to fill up and the quiet months to feel a little less quiet.</p><p>A professional website plays a <strong>huge</strong> part in that. It helps the right people find you, understand you and feel confident taking the next step.</p><p>But that shouldn’t mean finding £2,000+ upfront—or wrestling with another template that never quite seems to “get” your business.</p></div>
+      <div class="secret-reveal"><span>So, meet</span><strong>free web design.</strong></div>
+      <a class="button button-neon" href="#included">What do I get? <span aria-hidden="true">↘</span></a>
+    </section>
+
+    <section class="included split-section split-reverse" id="included" aria-labelledby="included-title">
+      <div class="feature-visual reveal" role="img" aria-label="Placeholder for a website shown across desktop and mobile devices"><span class="placeholder-kicker">Your work here</span><div class="device device-desktop"><div><b>ELEVATE</b><strong>Made for<br>momentum.</strong><i></i></div></div><div class="device device-phone"><div><b>E</b><strong>Make<br>your mark.</strong><i></i></div></div></div>
+      <div class="included-copy reveal">
+        <p class="section-label">Everything you need</p><h2 id="included-title">A proper website.<br><em>All included.</em></h2>
+        <ul class="tick-list"><li><span>01</span>Fully functional, professional website</li><li><span>02</span>Designed specifically for your business</li><li><span>03</span>Mobile-first and SEO-friendly</li><li><span>04</span>Built-in contact form for your clients</li><li><span>05</span>Hosting, SSL, monthly backups and friendly support</li><li><span>06</span>No contract. Cancel anytime.</li><li><span>07</span>Connected to your own domain</li></ul>
+        <p class="fine-print">Your domain is purchased separately and remains yours. You can buy it directly—there’s no need to pay me for it.</p><p class="thought">“But Rebecca… what’s the catch?”</p>
       </div>
     </section>
 
-    <section class="eb-process" id="how-it-works" aria-labelledby="process-title">
-      <div class="eb-process__heading">
-        <p class="eb-section-number">03 / The simple version</p>
-        <h2 id="process-title">How it will work.</h2>
-      </div>
-      <ol class="eb-process__list">
-        <li>
-          <span class="eb-process__number">01</span>
-          <div><h3>Tell us about your business</h3><p>You bring the knowledge. We turn it into a clear, confident online presence.</p></div>
-        </li>
-        <li>
-          <span class="eb-process__number">02</span>
-          <div><h3>We build your website</h3><p>A purposeful design shaped around your business—not pulled from a generic template.</p></div>
-        </li>
-        <li>
-          <span class="eb-process__number">03</span>
-          <div><h3>You pay for hosting</h3><p>Your website build is free. Hosting starts at £29 per month.</p></div>
-        </li>
-      </ol>
+    <section class="no-catch split-section" aria-labelledby="catch-title">
+      <div class="no-catch-copy reveal"><p class="section-label">Straight answer</p><h2 id="catch-title">There isn’t<br><em>a catch.</em></h2><p>There’s no design fee for a very simple reason: building websites that support small businesses is both my skill and something I genuinely enjoy.</p><p>My aim is to become the trusted professional you return to when you need friendly admin or tech support. I hope your website is the beginning of a long and happy working relationship.</p><p>And if we only ever talk websites? That’s fine too.</p><a class="button button-dark" href="#apply">Start my website <span aria-hidden="true">↗</span></a></div>
+      <div class="care-card reveal" role="img" aria-label="Placeholder for Rebecca working with a client"><span class="placeholder-kicker">Your photo here</span><div class="care-card-art"><span>Built with care.<br>Kept simple.</span></div><div class="care-card-note"><i aria-hidden="true"></i> One person, from first brief to final edit.</div></div>
     </section>
 
-    <section class="eb-closing" aria-labelledby="closing-title">
-      <div class="eb-closing__burst" aria-hidden="true"></div>
-      <p class="eb-section-number">04 / Watch this space</p>
-      <h2 id="closing-title">Something elevated<br>is taking shape.</h2>
-      <a class="eb-button eb-button--dark" href="#top">Back to the top <span aria-hidden="true">↑</span></a>
+    <section class="highlight-band" aria-label="Main offer highlights"><p>One thoughtful website.</p><p><strong>£0</strong> design fee.</p><p><strong>£29</strong> a month.</p><a class="button button-light" href="#apply">Yes, please <span aria-hidden="true">→</span></a></section>
+
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal"><p class="section-label">Made to feel like your business</p><h2 id="work-title">Inspiration <em>sites.</em></h2><p>These are illustrative examples for now. Every Elevated Business website is created around the individual client—not pulled from a one-size-fits-all template.</p></div>
+      <div class="work-grid">
+        <button class="work-card work-one reveal" type="button" data-modal-open="demo-one" aria-label="Open full preview of Studio Still example"><span class="work-number">01</span><span class="work-browser"><i></i><i></i><i></i></span><span class="work-screen"><small>STUDIO STILL</small><strong>Move gently.<br>Live fully.</strong><em>Wellness · Service</em></span><span class="work-open">View full concept ↗</span></button>
+        <button class="work-card work-two reveal" type="button" data-modal-open="demo-two" aria-label="Open full preview of North and Co example"><span class="work-number">02</span><span class="work-browser"><i></i><i></i><i></i></span><span class="work-screen"><small>NORTH &amp; CO.</small><strong>Clarity for<br>what’s next.</strong><em>Consulting · Professional</em></span><span class="work-open">View full concept ↗</span></button>
+        <button class="work-card work-three reveal" type="button" data-modal-open="demo-three" aria-label="Open full preview of Made by May example"><span class="work-number">03</span><span class="work-browser"><i></i><i></i><i></i></span><span class="work-screen"><small>MADE BY MAY</small><strong>Objects with<br>a story.</strong><em>Retail · Creative</em></span><span class="work-open">View full concept ↗</span></button>
+      </div>
+      <a class="button button-neon work-cta" href="#apply">Imagine yours here <span aria-hidden="true">↘</span></a>
     </section>
+
+    <section class="guided split-section" aria-labelledby="guided-title">
+      <div class="guided-photo reveal" role="img" aria-label="Placeholder for a photograph of Rebecca"><span class="placeholder-kicker">Rebecca’s photo</span><div class="guided-shape"><span>Let’s make<br>this easy.</span></div></div>
+      <div class="guided-copy reveal"><p class="section-label">No tech confidence required</p><h2 id="guided-title">Guided every step of the way.</h2><p>Not technically savvy? Never had a website built before? Don’t worry—I’ve got you.</p><p>All I need is some basic information about your business to create your first demo. From there, we’ll get more specific, fill in the blanks and shape every part together.</p><p>Nothing launches until you’re completely happy. And I’m around for aftercare and edits afterwards too.</p><a class="button button-dark" href="#process">See the process <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="section-heading section-heading-left reveal"><p class="section-label">Simple from start to site</p><h2 id="process-title">Three steps.<br><em>That’s it.</em></h2></div>
+      <ol class="process-grid"><li class="process-card reveal"><span>01</span><i aria-hidden="true">↘</i><h3>Complete a brief application</h3><p>Tell me the essentials: what your business does, who it helps and what you want your website to achieve.</p></li><li class="process-card reveal"><span>02</span><i aria-hidden="true">↘</i><h3>Review your demo site</h3><p>I’ll turn your information into a working first concept. You review it, then we refine the words, images and details together.</p></li><li class="process-card process-card-final reveal"><span>03</span><i aria-hidden="true">✦</i><h3>Publish!</h3><p>When you’re happy, we connect your domain and send your new website out into the world.</p><b class="confetti" aria-hidden="true">✦ ✺ ◆ ✦</b></li></ol>
+      <div class="process-note reveal"><strong>Change your mind? Spot another tweak?</strong><p>Edits are unlimited while we prepare your site. There’s nothing to pay until we’re ready to launch—and then it’s only £29 per month.</p></div>
+    </section>
+
+    <section class="faq" id="faq" aria-labelledby="faq-title"><div class="faq-frame"><div class="section-heading reveal"><p class="section-label">The useful details</p><h2 id="faq-title">Questions,<br><em>answered.</em></h2></div><div class="faq-list">
+      <details><summary>Is the website design really free?<span aria-hidden="true">+</span></summary><p>Yes. There is no charge for designing and building your website. You pay £29 per month when the site is ready to launch, covering hosting and ongoing maintenance.</p></details>
+      <details><summary>What does the £29 monthly fee include?<span aria-hidden="true">+</span></summary><p>It includes hosting, SSL, monthly backups, maintenance and friendly ongoing support for your website.</p></details>
+      <details><summary>Will I own my domain?<span aria-hidden="true">+</span></summary><p>Yes. You purchase your domain separately and it remains yours. I can help you connect it when your website is ready.</p></details>
+      <details><summary>Can I request changes before launch?<span aria-hidden="true">+</span></summary><p>Absolutely. We can make unlimited edits during the build, and your website won’t launch until you’re happy with it.</p></details>
+      <details><summary>Am I tied into a contract?<span aria-hidden="true">+</span></summary><p>No. There is no long-term contract, and you can cancel your monthly service at any time.</p></details>
+      <details><summary>What do you need from me to begin?<span aria-hidden="true">+</span></summary><p>Start with the short application form. Basic information about your business, audience and goals is enough for me to begin shaping your first demo.</p></details>
+    </div></div></section>
+
+    <section class="final-cta" id="apply" aria-labelledby="apply-title"><div class="final-star final-star-one" aria-hidden="true"></div><div class="final-star final-star-two" aria-hidden="true"></div><p class="section-label section-label-light">Your new website can start here</p><h2 id="apply-title">Ready to look<br><em>elevated?</em></h2><p>Tell me about your business and let’s see what we can create.</p><a class="button button-neon" href="#" aria-label="Start your website application">Start my application <span aria-hidden="true">↗</span></a><small>Application link to be connected.</small></section>
   </main>
 
-  <footer class="eb-footer">
-    <a class="eb-brand eb-brand--footer" href="#top">
-      <span class="eb-brand__mark" aria-hidden="true">EB</span>
-      <span class="eb-brand__name">Elevated Business</span>
-    </a>
-    <p>Websites built differently.</p>
-    <p>© <span data-current-year>2026</span> Elevated Business</p>
-  </footer>
+  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">EB</span><span>Elevated Business</span></a><p>Beautiful websites.<br>No design fee.</p><div><a href="#faq">FAQs</a><a href="#process">How it works</a><a href="#apply">Apply</a></div><p>© <span data-current-year>2026</span> Elevated Business</p></footer>
+
+  <dialog class="site-modal" data-modal="demo-one" aria-labelledby="modal-one-title"><button class="modal-close" type="button" data-modal-close aria-label="Close preview">×</button><div class="modal-preview modal-one"><small>Concept 01 · Wellness</small><h2 id="modal-one-title">Studio Still</h2><p>A soft, spacious concept for a modern wellbeing business.</p><div class="modal-page"><b>STILL.</b><strong>Move gently.<br>Live fully.</strong><span>Classes&nbsp;&nbsp; Journal&nbsp;&nbsp; Book</span></div></div></dialog>
+  <dialog class="site-modal" data-modal="demo-two" aria-labelledby="modal-two-title"><button class="modal-close" type="button" data-modal-close aria-label="Close preview">×</button><div class="modal-preview modal-two"><small>Concept 02 · Professional</small><h2 id="modal-two-title">North &amp; Co.</h2><p>A confident editorial concept for an expert-led service.</p><div class="modal-page"><b>NORTH &amp; CO.</b><strong>Clarity for<br>what’s next.</strong><span>Strategy&nbsp;&nbsp; Advisory&nbsp;&nbsp; Contact</span></div></div></dialog>
+  <dialog class="site-modal" data-modal="demo-three" aria-labelledby="modal-three-title"><button class="modal-close" type="button" data-modal-close aria-label="Close preview">×</button><div class="modal-preview modal-three"><small>Concept 03 · Creative</small><h2 id="modal-three-title">Made by May</h2><p>A characterful shopfront for a small creative brand.</p><div class="modal-page"><b>MADE BY MAY</b><strong>Objects with<br>a story.</strong><span>Shop&nbsp;&nbsp; Story&nbsp;&nbsp; Hello</span></div></div></dialog>
 </body>
 </html>
