@@ -1,6 +1,8 @@
-# Elevated Business - homepage
+# Elevated Business website
 
-A self-contained static homepage ready to deploy through Vercel. It uses semantic HTML, one stylesheet and dependency-free JavaScript.
+A static multi-page website ready to deploy through Vercel. Shared navigation and footer markup lives in `js/site-components.js`. Clean URLs are configured in `vercel.json`.
+
+Routes: `/`, `/meet-rebecca`, `/how-it-works`, and `/apply`.
 
 ## Preview locally
 

@@ -1,13 +1,14 @@
-# Elevated Business - homepage specification
+# Elevated Business - website specification
 
 ## Outcome
 
-Convert small-business visitors into application starts by explaining the no-design-fee offer clearly, showing the intended quality of work and answering the obvious “what’s the catch?” concern. Primary action: start an application. The final application URL is still required.
+Convert service-business visitors into application starts by explaining the no-design-fee offer clearly, showing the intended quality of work and answering the obvious “what’s the catch?” concern. Primary action: apply for a free website at `/apply`.
 
 ## Approved direction
 
 - Static Vercel deployment; no WordPress dependency.
-- Shared footer is provided by the `eb-site-footer` component in `js/site-components.js` for reuse across future pages.
+- Shared header and footer are provided by the `eb-site-header` and `eb-site-footer` components in `js/site-components.js`.
+- Vercel clean URLs are enabled, so page routes do not display `.html`.
 - Bold editorial design retained from the coming-soon page.
 - Core palette: neon `#c0ff15`, lilac `#f9f1fe`, blue `#5957ff`, black `#0b0b0b`, silver `#f1f2f0`.
 - Coral `#ff654f` is reserved for the persistent back-to-top control.
@@ -29,6 +30,21 @@ Convert small-business visitors into application starts by explaining the no-des
 11. Centred framed FAQs.
 12. Final application CTA.
 
+## Site map
+
+- `/` - homepage and core offer
+- `/meet-rebecca` - Rebecca's experience, values, creative approach and long-term relationship promise
+- `/how-it-works` - demo-first process, indicative timing and best-fit clients
+- `/apply` - focused application page; form to be added in the next stage
+
+## Audience and process
+
+- Best suited to relationship-led service businesses such as travel professionals, personal trainers, virtual assistants, coaches, therapists and beauticians.
+- Typical sites contain four or five pages, shaped around the business rather than a fixed page allowance.
+- Journey: application, confirmation email click, initial demo, refinements, domain connection and launch.
+- The initial demo is aimed within 24 hours on working days. A typical site may launch within three to five working days when content and feedback arrive promptly.
+- Timing is positioned as an aim, not a guarantee.
+
 ## Behaviour and accessibility
 
 - Responsive navigation at tablet/mobile widths.
@@ -40,7 +56,8 @@ Convert small-business visitors into application starts by explaining the no-des
 ## Open items before launch
 
 - Replace all portrait and portfolio placeholders with approved assets.
-- Connect every application CTA to the confirmed form/page URL.
+- Build the application questions, validation, submission handling, confirmation email and two success states.
+- Confirm whether ongoing project communication will use email or WhatsApp.
 - Confirm the final service terms and FAQ wording, especially cancellation, unlimited edits, backup frequency and ongoing-support boundaries.
 - Add approved privacy/terms links and analytics configuration.
 - Complete rendered desktop/mobile, keyboard and live-form QA before production sign-off.
