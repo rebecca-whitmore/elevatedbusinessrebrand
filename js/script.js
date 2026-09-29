@@ -23,6 +23,13 @@ const initialiseElevatedSite = () => {
     moveStar();
   }
 
+  const backToTop = document.querySelector('.back-to-top');
+  if (backToTop) {
+    const updateBackToTop = () => backToTop.classList.toggle('is-visible', window.scrollY > 500);
+    window.addEventListener('scroll', updateBackToTop, { passive: true });
+    updateBackToTop();
+  }
+
   if (menuButton && menu) {
     const closeMenu = () => {
       menu.classList.remove('is-open');
@@ -145,6 +152,35 @@ const initialiseElevatedSite = () => {
         }
       }, reduceMotion.matches ? 200 : 1800);
     });
+  }
+
+  const exitPrompt = document.querySelector('[data-exit-prompt]');
+  if (exitPrompt && window.matchMedia('(pointer: fine)').matches) {
+    let promptAvailable = false;
+    let promptShown = false;
+    try { promptShown = sessionStorage.getItem('elevated-exit-prompt') === 'shown'; } catch (error) { promptShown = false; }
+    window.setTimeout(() => { promptAvailable = true; }, 12000);
+
+    const closeExitPrompt = () => {
+      if (exitPrompt.open) exitPrompt.close();
+      document.body.classList.remove('modal-open');
+    };
+    const showExitPrompt = (event) => {
+      if (!promptAvailable || promptShown || event.clientY > 5 || event.relatedTarget || document.querySelector('dialog[open]')) return;
+      promptShown = true;
+      try { sessionStorage.setItem('elevated-exit-prompt', 'shown'); } catch (error) { /* Session storage may be unavailable. */ }
+      exitPrompt.showModal();
+      document.body.classList.add('modal-open');
+      document.removeEventListener('mouseout', showExitPrompt);
+    };
+    document.addEventListener('mouseout', showExitPrompt);
+    exitPrompt.querySelectorAll('[data-exit-close]').forEach((button) => button.addEventListener('click', closeExitPrompt));
+    exitPrompt.addEventListener('click', (event) => {
+      const bounds = exitPrompt.getBoundingClientRect();
+      const outside = event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom;
+      if (outside) closeExitPrompt();
+    });
+    exitPrompt.addEventListener('close', () => document.body.classList.remove('modal-open'));
   }
 };
 
