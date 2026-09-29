@@ -35,7 +35,8 @@ Convert service-business visitors into application starts by explaining the no-d
 - `/` - homepage and core offer
 - `/meet-rebecca` - Rebecca's experience, values, creative approach and long-term relationship promise
 - `/how-it-works` - demo-first process, indicative timing and best-fit clients
-- `/apply` - focused application page; form to be added in the next stage
+- `/apply` - focused multi-step application connected to Forminit
+- `/application-confirmed` - email-link landing page confirming permission to begin the demo
 - `/concept-aesthetics` - fictional calm aesthetics homepage concept
 - `/concept-travel` - fictional blue-toned travel consultant homepage concept
 - `/concept-coach` - fictional black-and-white business coaching homepage concept
