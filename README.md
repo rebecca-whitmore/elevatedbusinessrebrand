@@ -2,7 +2,7 @@
 
 A static multi-page website ready to deploy through Vercel. Shared navigation and footer markup lives in `js/site-components.js`. Clean URLs are configured in `vercel.json`.
 
-Routes: `/`, `/meet-rebecca`, `/how-it-works`, and `/apply`.
+Routes: `/`, `/meet-rebecca`, `/how-it-works`, `/apply`, `/concept-aesthetics`, `/concept-travel`, and `/concept-coach`.
 
 ## Preview locally
 
