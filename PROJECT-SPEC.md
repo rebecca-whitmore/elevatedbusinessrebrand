@@ -1,4 +1,4 @@
-# Elevated Business — homepage specification
+# Elevated Business - homepage specification
 
 ## Outcome
 
@@ -7,8 +7,10 @@ Convert small-business visitors into application starts by explaining the no-des
 ## Approved direction
 
 - Static Vercel deployment; no WordPress dependency.
+- Shared footer is provided by the `eb-site-footer` component in `js/site-components.js` for reuse across future pages.
 - Bold editorial design retained from the coming-soon page.
 - Core palette: neon `#c0ff15`, lilac `#f9f1fe`, blue `#5957ff`, black `#0b0b0b`, silver `#f1f2f0`.
+- Coral `#ff654f` is reserved for the persistent back-to-top control.
 - Reference principles: oversized central promise, layered site previews, alternating light/dark pacing, highly visible CTAs and spacious portfolio presentation.
 - All portfolio and portrait imagery is explicitly presented as placeholder material until genuine assets are supplied.
 

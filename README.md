@@ -1,4 +1,4 @@
-# Elevated Business — homepage
+# Elevated Business - homepage
 
 A self-contained static homepage ready to deploy through Vercel. It uses semantic HTML, one stylesheet and dependency-free JavaScript.
 
