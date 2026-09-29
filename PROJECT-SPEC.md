@@ -44,9 +44,3 @@ Convert small-business visitors into application starts by explaining the no-des
 - Confirm the final service terms and FAQ wording, especially cancellation, unlimited edits, backup frequency and ongoing-support boundaries.
 - Add approved privacy/terms links and analytics configuration.
 - Complete rendered desktop/mobile, keyboard and live-form QA before production sign-off.
-
-## Blog integration
-
-- `blog.html` reuses the shared visual system and `eb-site-footer` component.
-- The page fetches posts from `https://backoffice.elevatedbusiness.co.uk/wp-json/wp/v2/posts` and renders each WordPress title and content field into `#posts`.
-- Endpoint verification on 29 September 2026 returned `403 Forbidden`. The back-office host or security layer must permit public REST requests and cross-origin access from the production Vercel domain before the feed can populate.
