@@ -101,6 +101,15 @@ eb-site-header{display:block}.site-nav [aria-current="page"]:not(.nav-cta){color
 /* Real portrait imagery */
 .rebecca-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.portrait-placeholder .rebecca-photo{object-position:center 25%}.portrait-placeholder .portrait-shape{z-index:2;width:11rem;right:-3rem;bottom:-3rem;background:var(--neon);opacity:.9}.portrait-placeholder .portrait-shape:before,.portrait-placeholder .portrait-shape span{display:none}.care-card .rebecca-photo{object-position:center}.care-card-art{background:rgb(11 11 11/.78)}.guided-photo .rebecca-photo{object-position:center}.guided-shape{inset:auto -2rem -2rem auto;width:15rem;height:15rem}.guided-shape span{font-size:2rem}.about-portrait .rebecca-photo{object-position:center 20%}.about-portrait-shape{z-index:2;width:10rem;right:-2rem;bottom:-3rem;background:var(--neon)}.about-portrait-shape:before,.about-portrait-shape span{display:none}.profile-dot{padding:0;object-fit:cover;font-size:0}
 
+/* Portrait refinements */
+.portrait-placeholder{box-shadow:12px 12px 0 var(--black)}
+.care-card{width:min(100%,34rem);min-height:0;aspect-ratio:1;justify-self:center;overflow:hidden;background:transparent;border:0;border-radius:50%;box-shadow:12px 12px 0 var(--black)}
+.care-card .rebecca-photo{object-fit:cover;object-position:center}
+.guided-photo{overflow:visible;box-shadow:12px 12px 0 var(--black)}
+.guided-photo .rebecca-photo{z-index:1}
+.guided-shape{z-index:3}
+@media(max-width:620px){.portrait-placeholder,.care-card,.guided-photo{box-shadow:7px 7px 0 var(--black)}}
+
 /* Full concept previews */
 .concept-modal{width:min(90rem,96vw);height:94vh;max-height:94vh;overflow:hidden}.concept-modal[open]{display:grid;grid-template-rows:auto 1fr}.concept-modal .modal-close{position:absolute;top:1rem;right:1rem;float:none;margin:0}.concept-modal-heading{display:flex;min-height:6.5rem;padding:1.2rem 5.5rem 1.2rem 1.5rem;background:var(--black);color:#fff;align-items:center;justify-content:space-between;gap:2rem}.concept-modal-heading small{color:var(--neon);font-size:.65rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase}.concept-modal-heading h2{margin:.15rem 0 0;font-size:clamp(1.8rem,3vw,3rem);line-height:1}.concept-modal-heading>a{color:var(--neon);font-size:.7rem;font-weight:900;text-transform:uppercase}.concept-frame{display:block;width:100%;height:100%;background:#fff;border:0}@media(max-width:620px){.concept-modal{width:96vw;height:92vh}.concept-modal-heading{min-height:5.5rem;padding:1rem 4.5rem 1rem 1rem;align-items:flex-start;flex-direction:column;gap:.45rem}.concept-modal-heading h2{font-size:1.7rem}}
 
