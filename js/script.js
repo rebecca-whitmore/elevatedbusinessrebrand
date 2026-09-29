@@ -135,22 +135,45 @@ const initialiseElevatedSite = () => {
       field.addEventListener('change', () => field.closest('[data-required-choice]')?.classList.remove('is-invalid'));
     });
 
-    applicationForm.addEventListener('submit', (event) => {
+    applicationForm.addEventListener('submit', async (event) => {
       event.preventDefault();
       if (!validateStep(steps[currentStep])) return;
       steps[currentStep].hidden = true;
       const sending = applicationForm.querySelector('[data-form-sending]');
       const complete = applicationForm.querySelector('[data-form-complete]');
+      const errorBox = applicationForm.querySelector('[data-form-error]');
+      const errorMessage = applicationForm.querySelector('[data-form-error-message]');
+      if (errorBox) errorBox.hidden = true;
       if (sending) sending.hidden = false;
 
-      // Replace this preview transition with the Forminit request when the endpoint is connected.
-      window.setTimeout(() => {
+      applicationForm.querySelectorAll('input[type="tel"]').forEach((field) => {
+        let phone = field.value.trim().replace(/[\s().-]/g, '');
+        if (phone.startsWith('00')) phone = `+${phone.slice(2)}`;
+        if (phone.startsWith('0')) phone = `+44${phone.slice(1)}`;
+        if (/^44\d+$/.test(phone)) phone = `+${phone}`;
+        field.value = phone;
+      });
+
+      try {
+        if (typeof window.Forminit !== 'function') throw new Error('The secure form service did not load. Please check your connection and try again.');
+        const forminit = new window.Forminit();
+        const { error } = await forminit.submit('1ley20bm1gd', new FormData(applicationForm));
+        if (error) throw new Error(error.message || 'Please check your details and try again.');
         if (sending) sending.hidden = true;
         if (complete) {
           complete.hidden = false;
           complete.focus();
         }
-      }, reduceMotion.matches ? 200 : 1800);
+        applicationForm.reset();
+      } catch (error) {
+        if (sending) sending.hidden = true;
+        steps[currentStep].hidden = false;
+        if (errorMessage) errorMessage.textContent = error.message || 'Please try again. If the problem continues, email rebecca@elevatedbusiness.co.uk.';
+        if (errorBox) {
+          errorBox.hidden = false;
+          errorBox.scrollIntoView({ behavior: reduceMotion.matches ? 'auto' : 'smooth', block: 'center' });
+        }
+      }
     });
   }
 
