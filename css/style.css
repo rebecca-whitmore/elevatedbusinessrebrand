@@ -25,6 +25,7 @@
 
 /* Homepage refinement pass */
 :root{--coral:#ff654f}
+.hero{overflow:visible}
 .hero h1{line-height:.92}
 .thought{display:inline-flex;align-items:center;gap:1.5rem}
 .thought-arrow{display:inline-grid;width:1.75rem;height:3.5rem;place-items:end center;border-left:1px solid;font-family:Arial,sans-serif;font-style:normal;animation:pulse-down 1.5s ease-in-out infinite}
