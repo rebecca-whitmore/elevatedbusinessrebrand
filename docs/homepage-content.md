@@ -22,15 +22,9 @@ Practical sales and marketing advice that helps service businesses turn attentio
 
 ### Primary CTA
 
-**Send me The Elevated Edit**
+**Subscribe for free**
 
-### Suggested form fields
-
-- First name
-- Email address
-- Button: **Send me The Elevated Edit**
-
-Keep the first signup deliberately short. Industry can be captured later through the industry-specific pages and their separate MailerLite groups.
+The hero button scrolls to the full signup form later on the page. Keeping the hero focused on one clear action gives the main promise more room to land before asking for personal details.
 
 ---
 
@@ -307,7 +301,7 @@ No unrelated site navigation or social icons should be added unless they support
 | Location | CTA | Action |
 | --- | --- | --- |
 | Sticky header | Join The Elevated Edit | Scroll to signup form |
-| Hero | Send me The Elevated Edit | Submit newsletter form |
+| Hero | Subscribe for free | Scroll to signup form |
 | Problem section | Help me close the gaps | Scroll to signup form |
 | Content section | I want advice I can actually use | Scroll to signup form |
 | About section | Send me Rebecca’s next email | Scroll to signup form |

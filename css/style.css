@@ -431,42 +431,21 @@ p {
 .new-hero__intro {
   max-width: 790px;
   margin: 0 auto 2.3rem;
-  color: var(--ink-soft);
+  color: #354553;
   font-size: clamp(1.04rem, 1.5vw, 1.2rem);
   line-height: 1.7;
 }
 
-.signup-form.signup-form--new {
-  max-width: 880px;
-  margin-inline: auto;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
-}
-
-.signup-form--new .signup-form__fields {
-  grid-template-columns: .78fr 1fr auto;
-}
-
-.signup-form--new .field {
-  text-align: left;
-}
-
-.signup-form--new .field input {
-  border-color: rgba(0, 100, 106, .28);
-  border-radius: 12px;
-  background: rgba(255, 255, 255, .48);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .65);
-}
-
-.signup-form--new .button--primary {
+.new-hero__cta {
+  min-width: min(100%, 260px);
+  padding: 1rem 1.65rem;
   border-radius: 12px;
 }
 
-.signup-form--new .signup-form__note,
-.signup-form--new .form-status {
-  text-align: center;
+.new-hero__action p {
+  margin: .85rem 0 0;
+  color: #4d5b68;
+  font-size: .86rem;
 }
 
 .new-hero__orb {
@@ -1400,14 +1379,6 @@ p {
 }
 
 @media (max-width: 1000px) {
-  .signup-form--new .signup-form__fields {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .signup-form--new .signup-form__fields .button {
-    grid-column: 1 / -1;
-  }
-
   .hero__grid {
     grid-template-columns: minmax(0, 1fr) minmax(280px, .62fr);
     gap: 3rem;
@@ -1594,14 +1565,6 @@ p {
 
   .new-hero__title > span::after {
     content: " ";
-  }
-
-  .signup-form--new .signup-form__fields {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .signup-form--new .signup-form__fields .button {
-    grid-column: auto;
   }
 
   .hero__intro {
