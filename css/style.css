@@ -1275,7 +1275,7 @@ p {
 }
 
 .join-copy h2 {
-  max-width: 10ch;
+  max-width: 13ch;
 }
 
 .join-copy > p:not(.eyebrow) {
@@ -1283,10 +1283,15 @@ p {
   color: var(--ink-soft);
 }
 
+.join-copy strong {
+  color: var(--ink);
+}
+
 .signup-form--final {
   padding: clamp(1.5rem, 4vw, 2.4rem);
+  border: 1px solid rgba(0, 100, 106, .2);
   background: rgba(255, 255, 255, .92);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 12px 12px 0 var(--teal-bright), var(--shadow-lg);
 }
 
 .signup-form--final .field {

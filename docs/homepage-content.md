@@ -254,17 +254,19 @@ Recommended source image: at least 1600 × 1200 px if a landscape crop is planne
 
 ### Eyebrow
 
-YOUR BUSINESS IS ALREADY CREATING OPPORTUNITIES
+THE FREE WEEKLY EDIT FOR SERVICE BUSINESSES
 
 ### H2
 
-**Do not let the good ones go quiet.**
+**Build a steadier flow of enquiries, sales and returning customers.**
 
 ### Copy
 
-The right message can restart a conversation, strengthen an enquiry and remind a past customer why they chose you in the first place.
+The Elevated Edit gives you simple, actionable ways to attract the right people, turn interest into enquiries and sales, and keep good customers coming back.
 
-Join The Elevated Edit and start making more of the attention, trust and customer relationships your business is already working hard to earn.
+You’ll get straight-talking ideas you can put to work without overhauling your business or spending all week on your marketing.
+
+**Register for free and start building more consistency into the way your business finds, wins and keeps customers.**
 
 ### Signup form
 
