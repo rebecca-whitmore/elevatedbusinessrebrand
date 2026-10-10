@@ -240,18 +240,36 @@ p {
 
 .button--header {
   min-height: 44px;
-  padding: .75rem 1.15rem;
-  background: var(--ink);
-  color: white;
+  padding: .72rem 1.3rem;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 7px 18px rgba(31, 42, 55, .12);
+  color: var(--ink);
+  letter-spacing: .05em;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 
-.header-cta-short {
-  display: none;
+.button--header::after {
+  position: absolute;
+  top: -90%;
+  left: -35%;
+  width: 18%;
+  height: 280%;
+  transform: rotate(22deg);
+  background: rgba(37, 201, 195, .32);
+  content: "";
+  animation: button-shimmer 5.6s 1.2s ease-in-out infinite;
 }
 
 .button--header:hover {
   background: var(--teal-deep);
+  box-shadow: 0 11px 24px rgba(0, 100, 106, .24);
+  color: white;
+}
+
+.button--header:hover::after {
+  background: rgba(255, 255, 255, .38);
 }
 
 .button--full {
@@ -281,15 +299,15 @@ p {
   position: sticky;
   z-index: 100;
   top: 0;
-  border-bottom: 1px solid transparent;
-  background: rgba(250, 247, 242, .9);
+  border-bottom: 1px solid rgba(31, 42, 55, .1);
+  background: rgba(37, 201, 195, .96);
   backdrop-filter: blur(16px);
   transition: border-color .2s ease, box-shadow .2s ease;
 }
 
 .site-header.is-scrolled {
-  border-color: var(--line);
-  box-shadow: 0 8px 26px rgba(31, 42, 55, .07);
+  border-color: rgba(31, 42, 55, .18);
+  box-shadow: 0 8px 26px rgba(31, 42, 55, .12);
 }
 
 .site-header__inner {
@@ -348,6 +366,18 @@ p {
 .brand-emblem--small {
   width: 34px;
   height: 34px;
+}
+
+.site-header .brand-emblem i {
+  border-color: var(--ink);
+}
+
+.site-header .brand-emblem i:nth-child(2) {
+  border-color: rgba(31, 42, 55, .62);
+}
+
+.site-header .brand-emblem i:nth-child(3) {
+  background: var(--ink);
 }
 
 /* Hero */
@@ -1352,14 +1382,6 @@ p {
     gap: .75rem;
   }
 
-  .header-cta-full {
-    display: none;
-  }
-
-  .header-cta-short {
-    display: inline;
-  }
-
   .brand-emblem--small {
     width: 28px;
     height: 28px;
@@ -1367,7 +1389,7 @@ p {
 
   .button--header {
     min-height: 42px;
-    padding: .65rem .85rem;
+    padding: .65rem 1rem;
     font-size: .76rem;
   }
 

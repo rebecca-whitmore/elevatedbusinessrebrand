@@ -10,7 +10,7 @@
               ${emblem}
               <span>Elevated Business</span>
             </a>
-            <a class="button button--header" href="#join"><span class="header-cta-full">Join The Elevated Edit</span><span class="header-cta-short">Join The Edit</span></a>
+            <a class="button button--header" href="#join">Subscribe</a>
           </div>
         </header>`;
     }
