@@ -10,6 +10,7 @@
   window.addEventListener('scroll', updateHeader, { passive: true });
 
   const revealItems = document.querySelectorAll('[data-reveal]');
+  const repeatRevealItems = document.querySelectorAll('[data-repeat-reveal]');
   if (!reduceMotion && 'IntersectionObserver' in window) {
     document.documentElement.classList.add('motion-ready');
     const observer = new IntersectionObserver((entries) => {
@@ -22,6 +23,14 @@
     }, { rootMargin: '0px 0px -10% 0px', threshold: 0.12 });
 
     revealItems.forEach((item) => observer.observe(item));
+
+    const repeatObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle('is-visible', entry.isIntersecting);
+      });
+    }, { rootMargin: '-5% 0px -5% 0px', threshold: 0.35 });
+
+    repeatRevealItems.forEach((item) => repeatObserver.observe(item));
   }
 
   const popupKeys = {

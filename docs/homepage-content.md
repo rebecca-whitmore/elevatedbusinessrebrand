@@ -123,7 +123,7 @@ Not to mention having a consistent way to get your business in front of the righ
 
 **The Elevated Edit gives you practical, real-world ways to increase your impact and elevate your income.**
 
-This statement sits in a slim dark bar immediately after the problem section and reveals as the visitor scrolls.
+This statement sits in a slim dark bar immediately after the problem section. It rises into the bar from below when it enters the viewport, lowers out again when it leaves and repeats whenever the visitor scrolls back to it.
 
 ### CTA
 

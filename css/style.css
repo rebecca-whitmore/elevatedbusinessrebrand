@@ -1660,11 +1660,14 @@ body.modal-open {
   transform: none;
 }
 
-.motion-ready .insight-strip__text[data-reveal] {
-  transform: translateX(-34px);
+.motion-ready .insight-strip__text[data-repeat-reveal] {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity .65s ease, transform .75s cubic-bezier(.2, .7, .2, 1);
 }
 
-.motion-ready .insight-strip__text[data-reveal].is-visible {
+.motion-ready .insight-strip__text[data-repeat-reveal].is-visible {
+  opacity: 1;
   transform: none;
 }
 
@@ -2051,6 +2054,11 @@ body.modal-open {
   }
 
   .motion-ready [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .motion-ready [data-repeat-reveal] {
     opacity: 1;
     transform: none;
   }
