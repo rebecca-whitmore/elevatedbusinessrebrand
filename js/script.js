@@ -127,6 +127,7 @@
   });
 
   const tryTimedPopup = () => {
+    if (!document.querySelector('[data-modal="timed-signup"]')) return;
     if (hasSessionFlag(popupKeys.timed)) return;
     if (document.activeElement?.closest?.('[data-newsletter-form]')) {
       window.setTimeout(tryTimedPopup, 5000);
@@ -137,9 +138,11 @@
     }
   };
 
-  window.setTimeout(tryTimedPopup, 20000);
+  if (document.querySelector('[data-modal="timed-signup"]')) {
+    window.setTimeout(tryTimedPopup, 20000);
+  }
 
-  if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+  if (document.querySelector('[data-modal="exit-intent"]') && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
     const pageOpenedAt = Date.now();
     document.addEventListener('mouseout', (event) => {
       if (event.relatedTarget || event.clientY > 0 || Date.now() - pageOpenedAt < 5000) return;
