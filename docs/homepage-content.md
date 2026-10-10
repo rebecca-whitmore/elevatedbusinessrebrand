@@ -107,7 +107,7 @@ This should move gently and pause when hovered or focused. It must remain readab
 
 ### Eyebrow
 
-BEING GOOD AT WHAT YOU DO IS ONLY THE START
+BEING GREAT AT WHAT YOU DO IS ONLY THE START
 
 ### H2
 
@@ -117,15 +117,21 @@ BEING GOOD AT WHAT YOU DO IS ONLY THE START
 
 You can deliver exceptional work and still lose sales in the spaces between attention and action.
 
-The enquiry that cooled because nobody followed up. The past customer who would happily return but has not heard from you. The interested follower who still cannot tell why your offer is right for them.
+The enquiry that cooled because nobody followed up.
+
+The past customer who would happily return but has not heard from you.
+
+The interested follower who still cannot tell why your offer is right for them.
 
 Not to mention having a consistent way to get your business in front of the right people.
 
-The Elevated Edit gives you practical, real-world ways to increase your impact, and elevate your income. 
+### Supporting heading
+
+**The Elevated Edit gives you practical, real-world ways to increase your impact and elevate your income.**
 
 ### CTA
 
-**Button:** Help me close the gaps
+**Button:** Register for free
 
 Action: Scroll to signup form.
 
