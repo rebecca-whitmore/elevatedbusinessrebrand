@@ -214,25 +214,31 @@ THE PERSON BEHIND THE EMAILS
 
 ### H2
 
-**Hello, I’m Rebecca. I believe good marketing should lead somewhere.**
+**Hello, I’m Rebecca.**
+
+### Supporting heading
+
+**I believe the best marketing looks after the whole customer journey, not just the first click.**
 
 ### Copy
 
-I have spent years in roles where trust, timing and communication decide whether a conversation becomes a sale. From frontline travel sales and wedding and event management to web design, I have seen the same truth from every angle: being excellent at what you do is not enough if the value gets lost on the way to the customer.
+I’ve spent years in roles where trust, timing and communication make the difference between a conversation that goes somewhere and one that quietly fizzles out. From frontline travel sales and wedding and event management to web design, I’ve seen the same patterns again and again.
 
-That is why I created Elevated Business.
+Being found matters. So does everything that happens next: nurturing interest, handling enquiries, turning the right people into clients, and giving those clients a reason to stay, return and recommend you.
 
-I share practical sales and marketing thinking for established service-business owners who want more than visibility. They want better enquiries, stronger customer relationships and a business people are glad to return to.
+I created Elevated Business because I want to help service businesses build that whole journey. Not with endless tactics or more noise, but by making every stage work better together. The aim is a steadier income, fewer feast-or-famine months and more confidence about where your next customer is coming from.
 
-With The Elevated Edit you'll get clear ideas, explained like a human, with a reason behind every recommendation.
+Through The Elevated Edit, I share practical ways to improve sales, marketing and customer experience across the full lifecycle, from attracting new people to building clients for life.
+
+**Expect straight-talking, plain-speaking advice, shared with kindness and care.**
 
 ### Pull quote
 
-**“I want every email to leave you clearer, more confident and ready to do something useful.”**
+**“Your marketing should help the right people find you, choose you, come back to you and tell others about you.”**
 
 ### CTA
 
-**Button:** Send me Rebecca’s next email
+**Button:** Register for free
 
 Action: Scroll to signup form.
 
@@ -304,7 +310,7 @@ No unrelated site navigation or social icons should be added unless they support
 | Hero | Subscribe for free | Scroll to signup form |
 | Problem section | Help me close the gaps | Scroll to signup form |
 | Content section | I want advice I can actually use | Scroll to signup form |
-| About section | Send me Rebecca’s next email | Scroll to signup form |
+| About section | Register for free | Scroll to signup form |
 | Final section | Send me The Elevated Edit | Submit newsletter form |
 
 All signup forms should send subscribers to the same general-business MailerLite group. Future industry pages will use dedicated groups.
