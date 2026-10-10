@@ -183,7 +183,7 @@ The strongest service businesses guide people through the whole relationship:
 
 ### Five-stage pathway
 
-The pathway numbers glow gently in sequence from 01 to 05, then repeat. The effect is removed when reduced motion is preferred.
+The pathway dots and numbers brighten, glow and increase slightly in size together, moving in sequence from 01 to 05 before repeating. The effect is removed when reduced motion is preferred.
 
 1. **Visibility**  
    Show up where the right people are already looking, with a message that gives them a reason to notice.
