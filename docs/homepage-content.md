@@ -1,6 +1,6 @@
 # Elevated Business homepage content plan
 
-Status: Copy and direction approved for implementation on 10 October 2026. MailerLite integration pending.
+Status: Copy and direction approved for implementation on 10 October 2026. MailerLite integration implemented; production submission test pending.
 
 ## Page purpose
 
@@ -343,4 +343,4 @@ A simple set of two offset rings or ripples, representing a message moving outwa
 - The newsletter is free and will be sent once per week.
 - The proposed industries and About copy are approved.
 - The first release will use one general-business signup route.
-- MailerLite API integration remains pending. The group ID and approved consent wording will be added when available, then connected to the relevant MailerLite automation.
+- MailerLite signup is connected through the server-side `/api/newsletter-subscribe` function to group `200951716555785626`. The API token is stored as a Vercel Secret. A production submission and automation-trigger test remain outstanding.

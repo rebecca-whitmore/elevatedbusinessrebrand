@@ -202,6 +202,12 @@ p {
   transform: translateY(-2px);
 }
 
+.button:disabled {
+  cursor: wait;
+  opacity: .7;
+  transform: none;
+}
+
 .button--primary {
   min-height: 54px;
   padding: .95rem 1.35rem;
@@ -803,6 +809,32 @@ p {
   background: var(--teal-pale);
   color: var(--ink);
   font-weight: 600;
+}
+
+.form-status.is-error {
+  border-left-color: #b83434;
+  background: #fff0f0;
+  color: #761f1f;
+}
+
+.form-status.is-success {
+  border-left-color: var(--teal);
+}
+
+.field--website {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.signup-form__note a {
+  font-weight: 700;
 }
 
 /* Industry strip */
