@@ -119,9 +119,11 @@ The interested follower who still cannot tell why your offer is right for them.
 
 Not to mention having a consistent way to get your business in front of the right people.
 
-### Supporting heading
+### Transition bar
 
 **The Elevated Edit gives you practical, real-world ways to increase your impact and elevate your income.**
+
+This statement sits in a slim dark bar immediately after the problem section and reveals as the visitor scrolls.
 
 ### CTA
 
@@ -158,10 +160,6 @@ Handle enquiries, follow up with confidence and remove the uncertainty that allo
 #### Give customers a reason to return
 
 Use thoughtful communication to stay relevant after the first sale and create more opportunities for repeat business and referrals.
-
-### Closing line
-
-You will not need a marketing degree, a huge audience or an entire afternoon to make use of it.
 
 ### CTA
 
