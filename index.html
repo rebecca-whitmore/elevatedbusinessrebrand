@@ -3,101 +3,258 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#111111">
-  <title>Elevated Business | A new website is coming soon</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --ink: #111111;
-      --paper: #f7f7f4;
-      --lilac: #f9f1fe;
-      --lime: #c0ff15;
-      --coral: #ff665c;
-    }
-
-    * { box-sizing: border-box; }
-
-    html, body { min-height: 100%; }
-
-    body {
-      margin: 0;
-      display: grid;
-      place-items: center;
-      min-height: 100svh;
-      overflow-x: hidden;
-      background:
-        radial-gradient(circle at 12% 18%, rgba(192, 255, 21, .55) 0 7rem, transparent 7.1rem),
-        radial-gradient(circle at 88% 82%, rgba(255, 102, 92, .35) 0 9rem, transparent 9.1rem),
-        linear-gradient(135deg, var(--lilac), var(--paper));
-      color: var(--ink);
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    main {
-      width: min(92%, 58rem);
-      padding: clamp(2rem, 7vw, 5.5rem);
-      border: 2px solid var(--ink);
-      border-radius: 1.5rem;
-      background: rgba(255, 255, 255, .9);
-      box-shadow: 14px 14px 0 var(--ink);
-      text-align: center;
-    }
-
-    .eyebrow {
-      margin: 0 0 1.25rem;
-      font-size: .78rem;
-      font-weight: 800;
-      letter-spacing: .16em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      max-width: 12ch;
-      margin: 0 auto 1.25rem;
-      font-size: clamp(2.6rem, 8vw, 6.4rem);
-      line-height: .92;
-      letter-spacing: -.065em;
-    }
-
-    p {
-      max-width: 38rem;
-      margin: 0 auto;
-      font-size: clamp(1rem, 2vw, 1.25rem);
-      line-height: 1.65;
-    }
-
-    a {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: .9rem 1.25rem;
-      border: 2px solid var(--ink);
-      border-radius: 999px;
-      background: var(--lime);
-      color: var(--ink);
-      font-weight: 800;
-      text-decoration: none;
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
-
-    a:hover,
-    a:focus-visible {
-      transform: translate(-3px, -3px);
-      box-shadow: 5px 5px 0 var(--ink);
-      outline: none;
-    }
-
-    @media (max-width: 34rem) {
-      main { box-shadow: 8px 8px 0 var(--ink); }
-    }
-  </style>
+  <meta name="description" content="Join The Elevated Edit for practical weekly sales and marketing advice created for established service businesses.">
+  <meta name="theme-color" content="#faf7f2">
+  <meta property="og:title" content="The Elevated Edit | Elevated Business">
+  <meta property="og:description" content="Practical weekly sales and marketing advice for service businesses that want to be noticed, chosen and remembered.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://elevatedbusiness.co.uk/">
+  <title>The Elevated Edit | Sales and marketing advice for service businesses</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/site-components.js" defer></script>
+  <script src="/js/script.js" defer></script>
 </head>
 <body>
-  <main>
-    <p class="eyebrow">Elevated Business is evolving</p>
-    <h1>Something new is coming.</h1>
-    <p>A fresh Elevated Business website is on its way, created to help service businesses stay visible, build stronger relationships and turn more interest into action.</p>
-    <a href="mailto:rebecca@elevatedbusiness.co.uk">Email Rebecca</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <site-header>
+    <header class="site-header" data-site-header>
+      <div class="shell site-header__inner">
+        <a class="wordmark" href="#top" aria-label="Elevated Business, back to top">
+          <span class="brand-emblem brand-emblem--small" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>Elevated Business</span>
+        </a>
+        <a class="button button--header" href="#join"><span class="header-cta-full">Join The Elevated Edit</span><span class="header-cta-short">Join The Edit</span></a>
+      </div>
+    </header>
+  </site-header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+      <div class="shell hero__grid">
+        <div class="hero__copy" data-reveal>
+          <p class="eyebrow"><span></span> Sales and marketing notes for service businesses</p>
+          <h1>Build a business people <em>notice, choose</em> and come back to.</h1>
+          <div class="hero__intro">
+            <p>You do not need louder marketing. You need a clearer path from first glance to first sale, followed by a reason to return.</p>
+            <p>Join The Elevated Edit for useful, straight-talking advice that helps you attract the right attention, make more of every enquiry and build customer relationships that keep working long after the first yes.</p>
+          </div>
+
+          <form class="signup-form signup-form--hero" data-newsletter-form action="#" method="post">
+            <div class="signup-form__heading">
+              <span class="mini-spark" aria-hidden="true">✦</span>
+              <p>Your next smart move could be one email away.</p>
+            </div>
+            <div class="signup-form__fields">
+              <div class="field">
+                <label for="hero-first-name">First name</label>
+                <input id="hero-first-name" name="first_name" type="text" autocomplete="given-name" required>
+              </div>
+              <div class="field field--email">
+                <label for="hero-email">Email address</label>
+                <input id="hero-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <button class="button button--primary" type="submit">Send me The Elevated Edit</button>
+            </div>
+            <p class="signup-form__note">One useful email each week. No charge. Unsubscribe whenever you like.</p>
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="hero__visual" data-reveal>
+          <div class="orbit orbit--large" aria-hidden="true"><span></span></div>
+          <div class="portrait-card portrait-card--hero">
+            <div class="portrait-card__wash" aria-hidden="true"></div>
+            <img src="/assets/rebecca-portrait.jpg" alt="Rebecca, founder of Elevated Business" width="800" height="1000">
+            <div class="portrait-card__caption">
+              <span>Written by a real person</span>
+              <strong>For real businesses</strong>
+            </div>
+          </div>
+          <div class="hero-stamp" aria-hidden="true">
+            <span class="hero-stamp__ring">Free • Weekly • Useful •</span>
+            <span class="hero-stamp__mark">EB</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="industry-strip" aria-label="Businesses The Elevated Edit is for">
+      <p class="sr-only">For aesthetics businesses, virtual assistants, travel professionals, coaches, consultants, therapists, personal trainers and service businesses built on trust.</p>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <div class="marquee__group">
+            <span>Aesthetics businesses</span><b>✦</b><span>Virtual assistants</span><b>✦</b><span>Travel professionals</span><b>✦</b><span>Coaches</span><b>✦</b><span>Consultants</span><b>✦</b><span>Therapists</span><b>✦</b><span>Personal trainers</span><b>✦</b><span>Service businesses built on trust</span><b>✦</b>
+          </div>
+          <div class="marquee__group">
+            <span>Aesthetics businesses</span><b>✦</b><span>Virtual assistants</span><b>✦</b><span>Travel professionals</span><b>✦</b><span>Coaches</span><b>✦</b><span>Consultants</span><b>✦</b><span>Therapists</span><b>✦</b><span>Personal trainers</span><b>✦</b><span>Service businesses built on trust</span><b>✦</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--problem">
+      <div class="shell problem-grid">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow"><span></span> Being good at what you do is only the start</p>
+          <h2>A brilliant service cannot grow if people overlook it, hesitate or never come back.</h2>
+        </div>
+        <div class="problem-copy" data-reveal>
+          <p class="lead">You can deliver exceptional work and still lose sales in the spaces between attention and action.</p>
+          <p>The enquiry that cooled because nobody followed up. The past customer who would happily return but has not heard from you. The interested follower who still cannot tell why your offer is right for them.</p>
+          <p>Not to mention having a consistent way to get your business in front of the right people.</p>
+          <p class="ink-line">The Elevated Edit gives you practical, real-world ways to increase your impact and elevate your income.</p>
+          <a class="button button--secondary" href="#join">Help me close the gaps <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--benefits">
+      <div class="shell">
+        <div class="benefits-heading" data-reveal>
+          <div>
+            <p class="eyebrow"><span></span> Weekly email. Straight-talking business strategy.</p>
+            <h2>Advice that earns its place in your inbox.</h2>
+          </div>
+          <p>Every edition is designed to help you make a clearer decision, improve a customer touchpoint or take one useful action towards your next sale.</p>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-card" data-reveal>
+            <span class="benefit-card__number">01</span>
+            <span class="benefit-card__icon" aria-hidden="true">◌</span>
+            <h3>Get noticed for the right reasons</h3>
+            <p>Strengthen your message, sharpen your offers and make it easier for the right people to understand why they should choose you.</p>
+          </article>
+          <article class="benefit-card benefit-card--accent" data-reveal>
+            <span class="benefit-card__number">02</span>
+            <span class="benefit-card__icon" aria-hidden="true">✦</span>
+            <h3>Turn interest into action</h3>
+            <p>Handle enquiries, follow up with confidence and remove the uncertainty that allows a ready customer to drift away.</p>
+          </article>
+          <article class="benefit-card" data-reveal>
+            <span class="benefit-card__number">03</span>
+            <span class="benefit-card__icon" aria-hidden="true">↻</span>
+            <h3>Give customers a reason to return</h3>
+            <p>Use thoughtful communication to stay relevant after the first sale and create more opportunities for repeat business and referrals.</p>
+          </article>
+        </div>
+
+        <div class="benefits-close" data-reveal>
+          <p>You will not need a marketing degree, a huge audience or an entire afternoon to make use of it.</p>
+          <a class="text-link" href="#join">I want advice I can actually use <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--pathway">
+      <div class="pathway-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="shell">
+        <div class="pathway-heading" data-reveal>
+          <p class="eyebrow eyebrow--light"><span></span> The Elevated Business view</p>
+          <h2>More followers are nice. More customers who <em>buy, return and recommend you</em> are better.</h2>
+          <p>Marketing does not finish when somebody notices you. That is where the real work begins.</p>
+        </div>
+
+        <ol class="pathway-list">
+          <li data-reveal>
+            <span class="pathway-list__number">01</span>
+            <div><h3>Visibility</h3><p>Show up where the right people are already looking, with a message that gives them a reason to notice.</p></div>
+          </li>
+          <li data-reveal>
+            <span class="pathway-list__number">02</span>
+            <div><h3>Enquiry</h3><p>Make the right person feel understood and ready to take the next step.</p></div>
+          </li>
+          <li data-reveal>
+            <span class="pathway-list__number">03</span>
+            <div><h3>Sale</h3><p>Make choosing you feel clear, valuable and straightforward.</p></div>
+          </li>
+          <li data-reveal>
+            <span class="pathway-list__number">04</span>
+            <div><h3>Repeat</h3><p>Stay useful and relevant after the first transaction.</p></div>
+          </li>
+          <li data-reveal>
+            <span class="pathway-list__number">05</span>
+            <div><h3>Referral</h3><p>Give happy customers a reason to remember you and talk about you.</p></div>
+          </li>
+        </ol>
+
+        <p class="pathway-close" data-reveal>The Elevated Edit brings sales, marketing and customer experience together, because your customer does not experience them as separate departments. They experience <strong>one business.</strong></p>
+      </div>
+    </section>
+
+    <section class="section section--about">
+      <div class="shell about-grid">
+        <div class="about-visual" data-reveal>
+          <div class="about-photo">
+            <img src="/assets/rebecca-portrait.jpg" alt="Rebecca from Elevated Business" width="800" height="1000" loading="lazy">
+          </div>
+          <span class="about-spark" aria-hidden="true">✦</span>
+          <div class="about-rings" aria-hidden="true"><i></i><i></i></div>
+          <blockquote>“I want every email to leave you clearer, more confident and ready to do something useful.”</blockquote>
+        </div>
+
+        <div class="about-copy" data-reveal>
+          <p class="eyebrow"><span></span> The person behind the emails</p>
+          <h2>Hello, I’m Rebecca. I believe good marketing should lead somewhere.</h2>
+          <p>I have spent years in roles where trust, timing and communication decide whether a conversation becomes a sale. From frontline travel sales and wedding and event management to web design, I have seen the same truth from every angle: being excellent at what you do is not enough if the value gets lost on the way to the customer.</p>
+          <p><strong>That is why I created Elevated Business.</strong></p>
+          <p>I share practical sales and marketing thinking for established service-business owners who want more than visibility. They want better enquiries, stronger customer relationships and a business people are glad to return to.</p>
+          <p>With The Elevated Edit you’ll get clear ideas, explained like a human, with a reason behind every recommendation.</p>
+          <a class="button button--secondary" href="#join">Send me Rebecca’s next email</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--join" id="join">
+      <div class="join-ripple join-ripple--one" aria-hidden="true"></div>
+      <div class="join-ripple join-ripple--two" aria-hidden="true"></div>
+      <div class="shell join-grid">
+        <div class="join-copy" data-reveal>
+          <p class="eyebrow"><span></span> Your business is already creating opportunities</p>
+          <h2>Do not let the good ones go quiet.</h2>
+          <p>The right message can restart a conversation, strengthen an enquiry and remind a past customer why they chose you in the first place.</p>
+          <p>Join The Elevated Edit and start making more of the attention, trust and customer relationships your business is already working hard to earn.</p>
+        </div>
+
+        <form class="signup-form signup-form--final" data-newsletter-form action="#" method="post" data-reveal>
+          <div class="signup-form__heading">
+            <span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span>
+            <div><span>Free weekly advice</span><p>Join The Elevated Edit</p></div>
+          </div>
+          <div class="field">
+            <label for="final-first-name">First name</label>
+            <input id="final-first-name" name="first_name" type="text" autocomplete="given-name" required>
+          </div>
+          <div class="field">
+            <label for="final-email">Email address</label>
+            <input id="final-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <button class="button button--primary button--full" type="submit">Send me The Elevated Edit</button>
+          <p class="signup-form__note">One useful email each week. No charge. Unsubscribe whenever you like.</p>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
   </main>
+
+  <site-footer>
+    <footer class="site-footer">
+      <div class="shell site-footer__top">
+        <a class="wordmark wordmark--footer" href="#top"><span class="brand-emblem brand-emblem--small" aria-hidden="true"><i></i><i></i><i></i></span><span>Elevated Business</span></a>
+        <p>Practical sales and marketing advice for service businesses that want to be noticed, chosen and remembered.</p>
+      </div>
+      <div class="shell site-footer__bottom">
+        <div><a href="mailto:rebecca@elevatedbusiness.co.uk">rebecca@elevatedbusiness.co.uk</a><span>© 2026 Elevated Business. All rights reserved.</span></div>
+        <nav aria-label="Legal"><a href="/privacy-policy">Privacy Policy</a><a href="/cookie-policy">Cookie Policy</a><a href="/terms-and-conditions">Terms and Conditions</a></nav>
+      </div>
+    </footer>
+  </site-footer>
 </body>
 </html>
