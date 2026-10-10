@@ -81,7 +81,7 @@ h1 {
   font-size: clamp(3.25rem, 6.7vw, 6.9rem);
   font-weight: 500;
   line-height: .9;
-  letter-spacing: -.064em;
+  letter-spacing: -.035em;
 }
 
 h1 em,
@@ -381,6 +381,157 @@ p {
 }
 
 /* Hero */
+
+.new-hero {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  min-height: min(820px, calc(100svh - 80px));
+  place-items: center;
+  padding-block: clamp(5.5rem, 10vw, 9rem);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(37, 201, 195, .18), transparent 27%),
+    radial-gradient(circle at 86% 74%, rgba(91, 188, 220, .18), transparent 29%),
+    linear-gradient(180deg, var(--paper) 0%, #eaf8f7 55%, var(--paper) 100%);
+}
+
+.new-hero__inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.new-hero__eyebrow {
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.new-hero__eyebrow > span:last-child {
+  display: block;
+}
+
+.new-hero__title {
+  max-width: 1120px;
+  margin-inline: auto;
+  margin-bottom: 1.8rem;
+  font-size: clamp(3.7rem, 7.25vw, 7rem);
+  line-height: .95;
+  letter-spacing: -.025em;
+}
+
+.new-hero__title > span {
+  display: block;
+}
+
+.new-hero__intro {
+  max-width: 790px;
+  margin: 0 auto 2.3rem;
+  color: var(--ink-soft);
+  font-size: clamp(1.04rem, 1.5vw, 1.2rem);
+  line-height: 1.7;
+}
+
+.signup-form.signup-form--new {
+  max-width: 880px;
+  margin-inline: auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.signup-form--new .signup-form__fields {
+  grid-template-columns: .78fr 1fr auto;
+}
+
+.signup-form--new .field {
+  text-align: left;
+}
+
+.signup-form--new .field input {
+  border-color: rgba(0, 100, 106, .28);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .48);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .65);
+}
+
+.signup-form--new .button--primary {
+  border-radius: 12px;
+}
+
+.signup-form--new .signup-form__note,
+.signup-form--new .form-status {
+  text-align: center;
+}
+
+.new-hero__orb {
+  position: absolute;
+  z-index: 0;
+  border-radius: 50%;
+  filter: blur(3px);
+  pointer-events: none;
+}
+
+.new-hero__orb--one {
+  top: 9%;
+  left: -9%;
+  width: clamp(260px, 34vw, 520px);
+  aspect-ratio: 1;
+  background: radial-gradient(circle, rgba(37, 201, 195, .2), transparent 68%);
+  animation: float-soft 10s ease-in-out infinite;
+}
+
+.new-hero__orb--two {
+  right: -8%;
+  bottom: 0;
+  width: clamp(240px, 31vw, 470px);
+  aspect-ratio: 1;
+  background: radial-gradient(circle, rgba(72, 170, 214, .18), transparent 68%);
+  animation: float-soft 12s -4s ease-in-out infinite reverse;
+}
+
+.new-hero__rings {
+  position: absolute;
+  z-index: 1;
+  top: 9%;
+  right: 8%;
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgba(0, 127, 134, .22);
+  border-radius: 50%;
+  animation: slow-rotate 24s linear infinite;
+}
+
+.new-hero__rings i {
+  position: absolute;
+  inset: 21%;
+  border: 1px solid rgba(37, 201, 195, .32);
+  border-radius: 50%;
+}
+
+.new-hero__rings i:nth-child(2) {
+  inset: 39%;
+}
+
+.new-hero__rings i:nth-child(3) {
+  inset: 47%;
+  border: 0;
+  background: var(--teal-bright);
+}
+
+.hero--reference {
+  border-top: 1px solid var(--line);
+}
+
+.hero-reference__title {
+  max-width: 12ch;
+  margin-bottom: 1.4rem;
+  font-size: clamp(3.25rem, 6.7vw, 6.9rem);
+  font-weight: 500;
+  line-height: .9;
+  letter-spacing: -.035em;
+}
 
 .hero {
   position: relative;
@@ -1243,6 +1394,14 @@ p {
 }
 
 @media (max-width: 1000px) {
+  .signup-form--new .signup-form__fields {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .signup-form--new .signup-form__fields .button {
+    grid-column: 1 / -1;
+  }
+
   .hero__grid {
     grid-template-columns: minmax(0, 1fr) minmax(280px, .62fr);
     gap: 3rem;
@@ -1291,6 +1450,19 @@ p {
 
   .section-heading {
     position: static;
+  }
+
+  .new-hero {
+    min-height: auto;
+  }
+
+  .new-hero__title {
+    font-size: clamp(3rem, 10.5vw, 4.6rem);
+  }
+
+  .new-hero__rings {
+    top: 3%;
+    right: -45px;
   }
 
   .hero__grid,
@@ -1395,6 +1567,35 @@ p {
 
   .hero {
     padding-top: 3.4rem;
+  }
+
+  .new-hero {
+    padding-block: 4.5rem 5rem;
+  }
+
+  .new-hero__eyebrow > span:last-child {
+    display: none;
+  }
+
+  .new-hero__title {
+    font-size: clamp(2.75rem, 12vw, 3.75rem);
+    line-height: .98;
+  }
+
+  .new-hero__title > span {
+    display: inline;
+  }
+
+  .new-hero__title > span::after {
+    content: " ";
+  }
+
+  .signup-form--new .signup-form__fields {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .signup-form--new .signup-form__fields .button {
+    grid-column: auto;
   }
 
   .hero__intro {
