@@ -1357,6 +1357,163 @@ p {
   animation-delay: -2s;
 }
 
+/* Signup and exit-intent modals */
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.site-modal[hidden] {
+  display: none;
+}
+
+.site-modal {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: grid;
+  padding: 1rem;
+  place-items: center;
+}
+
+.site-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 28, 38, .68);
+  backdrop-filter: blur(8px) saturate(.72);
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+.site-modal__dialog {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 640px);
+  max-height: calc(100dvh - 2rem);
+  padding: clamp(1.6rem, 5vw, 3rem);
+  overflow-y: auto;
+  border: 1px solid rgba(0, 100, 106, .2);
+  border-radius: var(--radius-md);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(37, 201, 195, .22), transparent 32%),
+    var(--surface);
+  box-shadow: 12px 12px 0 var(--teal-bright), 0 34px 90px rgba(10, 20, 30, .34);
+  opacity: 0;
+  transform: translateY(18px) scale(.98);
+  transition: opacity .22s ease, transform .22s ease;
+}
+
+.site-modal.is-open .site-modal__backdrop,
+.site-modal.is-open .site-modal__dialog {
+  opacity: 1;
+}
+
+.site-modal.is-open .site-modal__dialog {
+  transform: none;
+}
+
+.site-modal__close {
+  position: absolute;
+  z-index: 2;
+  top: .8rem;
+  right: .8rem;
+  display: grid;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: white;
+  color: var(--ink);
+  cursor: pointer;
+  font: 500 1.6rem/1 var(--sans);
+  transition: background-color .2s ease, color .2s ease, transform .2s ease;
+}
+
+.site-modal__close:hover,
+.site-modal__close:focus-visible {
+  background: var(--ink);
+  color: white;
+  transform: rotate(4deg);
+}
+
+.site-modal__dialog h2 {
+  max-width: 12ch;
+  margin-bottom: 1rem;
+  font-size: clamp(2.35rem, 6vw, 4.3rem);
+}
+
+.site-modal__dialog > p:not(.eyebrow) {
+  max-width: 570px;
+  color: var(--ink-soft);
+}
+
+.site-modal__spark {
+  position: absolute;
+  top: 1rem;
+  left: 1.2rem;
+  color: var(--teal);
+  font-size: 1.4rem;
+  animation: spark-turn 8s linear infinite;
+}
+
+.signup-form--modal {
+  margin-top: 1.4rem;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.signup-form--modal .field + .field {
+  margin-top: .8rem;
+}
+
+.signup-form--modal .field input {
+  border-radius: 12px;
+  background: white;
+}
+
+.signup-form--modal .button {
+  margin-top: 1rem;
+  border-radius: 12px;
+}
+
+.site-modal__dialog--exit {
+  width: min(100%, 570px);
+  text-align: center;
+}
+
+.site-modal__dialog--exit .brand-emblem {
+  margin: 0 auto 1.2rem;
+}
+
+.site-modal__dialog--exit .eyebrow {
+  justify-content: center;
+}
+
+.site-modal__dialog--exit h2,
+.site-modal__dialog--exit > p {
+  margin-inline: auto;
+}
+
+.site-modal__dialog--exit .button {
+  margin-top: .6rem;
+}
+
+.site-modal__dismiss {
+  display: block;
+  margin: 1rem auto 0;
+  padding: .35rem;
+  border: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+  font: 600 .78rem/1.4 var(--sans);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 /* Footer */
 
 .site-footer {

@@ -280,7 +280,21 @@ Useful sales and marketing advice for service businesses. Unsubscribe whenever y
 
 ---
 
-## 9. Reusable footer
+## 9. Registration popups
+
+### Timed signup
+
+After 20 seconds, show a focused signup dialog containing the same first-name and email form as the final page section. Submissions use the same MailerLite endpoint and group. The page behind it is darkened and softly blurred.
+
+### Exit intent
+
+On desktop pointer devices, show a shorter registration prompt when the visitor moves towards the top of the browser to leave. Its CTA closes the dialog, scrolls to the final signup section and focuses the first field.
+
+Both dialogs have a prominent close button and can also be dismissed with Escape or by selecting the backdrop. They cannot appear over one another, have a minimum 15-second gap and are shown no more than once each per browser session. A successful signup suppresses both for the remainder of the session. Exit intent is not simulated on mobile because browsers do not expose a dependable equivalent.
+
+---
+
+## 10. Reusable footer
 
 The footer should be built as a reusable component from the beginning so that the same structure can appear on the homepage and every future industry page.
 
